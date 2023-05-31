@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Music Streaming Application</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/7070f8088b.js" crossorigin="anonymous"></script>
+        
 </head>
+
 <body>
-   <nav>
-    <ul>
-        <li class="brand"><img src="logo.png" alt="Music">Music Streaming</li>
-        <li>Home</li>
-        <li>About</li>
-    </ul>
-   </nav>
-   <div class="container">
-    <div class="songList">
-        <h1>Best of 2023</h1>
-        <div class="songItemContainer">
-            <div class="songItem">
-                <img src="covers/1.jpeg" alt="1" >
-                <span>Ram Siya Ram</span>
-                <span class="songlistplay"><span class="timestamp">5:34</span><i id="0" class="far songItemPlay  fa-play-circle"></i></span>
-            </div>
-            <div class="songItem">
-                <img src="covers/2.jpeg" alt="1" >
-                <span>Tere Hawaale</span>
-                <span class="songlistplay"><span class="timestamp">4:34</span><i id="1" class="far songItemPlay fa-play-circle"></i></span>
-            </div>
-            <div class="songItem">
-                <img src="covers/3.jpeg" alt="1" >
-                <span>Tere Vaaste</span>
-                <span class="songlistplay"><span class="timestamp">5:04</span><i id="2" class="far songItemPlay fa-play-circle"></i></span>
-            </div>
-            <div class="songItem">
-                <img src="covers/4.jpeg" alt="1" >
-                <span>Tu Hai To Mujhe Phir Aur Kya Chahiye</span>
-                <span class="songlistplay"><span class="timestamp">5:00</span><i id="3" class="far songItemPlay fa-play-circle"></i></span>
-            </div>
-            <div class="songItem">
-                <img src="covers/5.jpeg" alt="1" >
-                <span>Zihaal e Miskin</span>
-                <span class="songlistplay"><span class="timestamp">4:25</span><i id="4" class="far songItemPlay fa-play-circle"></i></span>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Music">Music Streaming</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of 2023</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpeg" alt="1">
+                    <span>Ram Siya Ram</span>
+                    <span class="songlistplay"><span class="timestamp">5:34</span><i id="0"
+                            class="far songItemPlay  fa-solid fa-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpeg" alt="1">
+                    <span>Tere Hawaale</span>
+                    <span class="songlistplay"><span class="timestamp">4:34</span><i id="1"
+                            class="far songItemPlay fa-solid fa-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpeg" alt="1">
+                    <span>Tere Vaaste</span>
+                    <span class="songlistplay"><span class="timestamp">5:04</span><i id="2"
+                            class="far songItemPlay fa-solid fa-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpeg" alt="1">
+                    <span>Tu Hai To Mujhe Phir Aur Kya Chahiye</span>
+                    <span class="songlistplay"><span class="timestamp">5:00</span><i id="3"
+                            class="far songItemPlay fa-solid fa-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpeg" alt="1">
+                    <span>Zihaal e Miskin</span>
+                    <span class="songlistplay"><span class="timestamp">4:25</span><i id="4"
+                            class="far songItemPlay fa-solid fa-play"></i></span>
+                </div>
             </div>
         </div>
+        <div class="songBanner"></div>
     </div>
-    <div class="songBanner"></div>
-   </div>
-   <div class="bottom">
-    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
-    <div class="icons">
-        <i class="far fa-3x fa-step-forward" id="next"></i>
-        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-        <i class="far fa-3x fa-setp-backward" id="previous"></i> 
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="far  fa-3x fa-solid fa-forward" id="next"></i>
+            <i class="far  fa-3x fa-solid fa-play" id="masterPlay"></i>
+            <i class="far fa-3x fa-solid fa-backward" id="previous"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="54px" alt="" id="gif"> <span id="masterSongName">Ram Siya Ram</span>
+        </div>
     </div>
-    <div class="songInfo">
-        <img src="playing.gif"   width="54px"   alt="" id="gif"> <span id="masterSongName">Ram Siya Ram</span> 
-    </div>
-   </div>
     <script src="main.js"></script>
     
+
 </body>
+
 </html>

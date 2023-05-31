@@ -49,12 +49,13 @@ nav ul li{
 .bottom{
     position: sticky;
     height: 126px;
-    background-color:black;
+    background-color:rgb(43, 223, 226);
     bottom: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    color: black;
 }
 
 .icons{
